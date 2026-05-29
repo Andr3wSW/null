@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schoology Null - Calendar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- SIDEBAR NAVIGATION -->
+  <aside>
+    <h1>NULL</h1>
+    <nav>
+      <!-- We swapped the 'active' class to the Calendar link -->
+      <a href="index.html">Dashboard</a>
+      <a href="courses.html">Courses</a>
+      <a href="grades.html">Grades</a>
+      <a href="calendar.html" class="active">Calendar</a>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT AREA -->
+  <main>
+    <!-- TOP ROW: TITLE AND SWITCH CONTROLS -->
+    <header class="calendar-controls">
+      <div>
+        <h2>Schedule Overview</h2>
+        <p>Track your upcoming homework assignments and lesson milestones.</p>
+      </div>
+      <div class="btn-group">
+        <button>Prev</button>
+        <button>Today</button>
+        <button>Next</button>
+      </div>
+    </header>
+
+    <h3 style="margin-bottom: 16px; font-size: 20px; font-weight: 600;">May 2026</h3>
+
+    <!-- THE DAYS OF THE WEEK TOP LABELS BAR -->
+    <div class="weekdays-header">
+      <div class="weekday-title">Sun</div>
+      <div class="weekday-title">Mon</div>
+      <div class="weekday-title">Tue</div>
+      <div class="weekday-title">Wed</div>
+      <div class="weekday-title">Thu</div>
+      <div class="weekday-title">Fri</div>
+      <div class="weekday-title">Sat</div>
+    </div>
+
+    <!-- MAIN 7x5 CALENDAR GRID CANVAS -->
+    <div class="calendar-grid">
+      
+      <!-- WEEK 1 -->
+      <div class="day-cell outside-month"><div class="day-number">26</div></div>
+      <div class="day-cell outside-month"><div class="day-number">27</div></div>
+      <div class="day-cell outside-month"><div class="day-number">28</div></div>
+      <div class="day-cell outside-month"><div class="day-number">29</div></div>
+      <div class="day-cell outside-month"><div class="day-number">30</div></div>
+      <div class="day-cell"><div class="day-number">1</div></div>
+      <div class="day-cell"><div class="day-number">2</div></div>
+
+      <!-- WEEK 2 -->
+      <div class="day-cell"><div class="day-number">3</div></div>
+      <div class="day-cell"><div class="day-number">4</div></div>
+      <div class="day-cell"><div class="day-number">5</div></div>
+      <div class="day-cell"><div class="day-number">6</div></div>
+      <div class="day-cell"><div class="day-number">7</div></div>
+      <div class="day-cell">
+        <div class="day-number">8</div>
+        <div class="calendar-event event-english">Vocabulary Quiz 8</div>
+      </div>
+      <div class="day-cell"><div class="day-number">9</div></div>
+
+      <!-- WEEK 3 -->
+      <div class="day-cell"><div class="day-number">10</div></div>
+      <div class="day-cell">
+        <div class="day-number">11</div>
+        <div class="calendar-event event-math">Pop Quiz: Limits</div>
+      </div>
+      <div class="day-cell"><div class="day-number">12</div></div>
+      <div class="day-cell"><div class="day-number">13</div></div>
+      <div class="day-cell">
+        <div class="day-number">14</div>
+        <div class="calendar-event event-english">Socratic Seminar</div>
+      </div>
+      <div class="day-cell"><div class="day-number">15</div></div>
+      <div class="day-cell"><div class="day-number">16</div></div>
+
+      <!-- WEEK 4 -->
+      <div class="day-cell"><div class="day-number">17</div></div>
+      <div class="day-cell">
+        <div class="day-number">18</div>
+        <div class="calendar-event event-math">Taylor Series HW</div>
+      </div>
+      <div class="day-cell">
+        <div class="day-number">19</div>
+        <div class="calendar-event event-history">Ch. 24 Reading Guide</div>
+      </div>
+      <div class="day-cell">
+        <div class="day-number">20</div>
+        <div class="calendar-event event-english">Hamlet Essay Draft</div>
+      </div>
+      <div class="day-cell"><div class="day-number">21</div></div>
+      <div class="day-cell">
+        <div class="day-number">22</div>
+        <div class="calendar-event event-math">Unit 8 Exam</div>
+      </div>
+      <div class="day-cell"><div class="day-number">23</div></div>
+
+      <!-- WEEK 5 -->
+      <div class="day-cell"><div class="day-number">24</div></div>
+      <div class="day-cell">
+        <div class="day-number">25</div>
+        <div class="calendar-event event-history">Cold War Presentation</div>
+      </div>
+      <div class="day-cell"><div class="day-number">26</div></div>
+      <div class="day-cell"><div class="day-number">27</div></div>
+      <div class="day-cell"><div class="day-number">28</div></div>
+      <!-- Today Highlight Sample Row Block -->
+      <div class="day-cell today">
+        <div class="day-number">29</div>
+      </div>
+      <div class="day-cell"><div class="day-number">30</div></div>
+
+    </div>
+  </main>
+
+</body>
+</html>
