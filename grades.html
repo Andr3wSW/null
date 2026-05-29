@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schoology Null - Grades</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- SIDEBAR NAVIGATION -->
+  <aside>
+    <h1>NULL</h1>
+    <nav>
+      <!-- We swapped the 'active' class to the Grades link -->
+      <a href="index.html">Dashboard</a>
+      <a href="courses.html">Courses</a>
+      <a href="grades.html" class="active">Grades</a>
+      <a href="calendar.html">Calendar</a>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT AREA -->
+  <main>
+    <header>
+      <h2>Grade Report</h2>
+      <p>Click any class to expand the breakdown of your assignments.</p>
+    </header>
+
+    <!-- SECTION 1: DROPDOWN ACCORDIONS -->
+    <section>
+      
+      <!-- AP English 12 Dropdown -->
+      <details class="course-dropdown">
+        <summary>
+          <span>AP English 12</span>
+          <div class="dropdown-header-right">
+            <span class="badge green">Period 1</span>
+            <span class="grade" style="color: #60a5fa;">A (95%)</span>
+          </div>
+        </summary>
+        <div class="assignment-list">
+          <div class="assignment-row">
+            <div class="assignment-info">
+              <h4>Hamlet Essay Final Draft</h4>
+              <p>Due May 20</p>
+            </div>
+            <div class="assignment-score"><span>98</span> / 100</div>
+          </div>
+          <div class="assignment-row">
+            <div class="assignment-info">
+              <h4>Socratic Seminar: Act IV</h4>
+              <p>Due May 14</p>
+            </div>
+            <div class="assignment-score"><span>18</span> / 20</div>
+          </div>
+          <div class="assignment-row">
+            <div class="assignment-info">
+              <h4>Vocabulary Quiz 8</h4>
+              <p>Due May 08</p>
+            </div>
+            <div class="assignment-score"><span>10</span> / 10</div>
+          </div>
+        </div>
+      </details>
+
+      <!-- Calculus BC Dropdown -->
+      <details class="course-dropdown">
+        <summary>
+          <span>Calculus BC</span>
+          <div class="dropdown-header-right">
+            <span class="badge amber">Period 2</span>
+            <span class="grade" style="color: #c084fc;">B+ (88%)</span>
+          </div>
+        </summary>
+        <div class="assignment-list">
+          <div class="assignment-row">
+            <div class="assignment-info">
+              <h4>Unit 8 Exam: Integration</h4>
+              <p>Due May 22</p>
+            </div>
+            <div class="assignment-score"><span>82</span> / 100</div>
+          </div>
+          <div class="assignment-row">
+            <div class="assignment-info">
+              <h4>Homework: Taylor Series</h4>
+              <p>Due May 18</p>
+            </div>
+            <div class="assignment-score" style="color: #f87171;">Missing</div>
+          </div>
+          <div class="assignment-row">
+            <div class="assignment-info">
+              <h4>Pop Quiz: Limits</h4>
+              <p>Due May 11</p>
+            </div>
+            <div class="assignment-score"><span>9</span> / 10</div>
+          </div>
+        </div>
+      </details>
+
+      <!-- US History Dropdown -->
+      <details class="course-dropdown">
+        <summary>
+          <span>US History</span>
+          <div class="dropdown-header-right">
+            <span class="badge blue">Period 3</span>
+            <span class="grade" style="color: #34d399;">A- (92%)</span>
+          </div>
+        </summary>
+        <div class="assignment-list">
+          <div class="assignment-row">
+            <div class="assignment-info">
+              <h4>Cold War Presentation</h4>
+              <p>Due May 25</p>
+            </div>
+            <div class="assignment-score"><span>47</span> / 50</div>
+          </div>
+          <div class="assignment-row">
+            <div class="assignment-info">
+              <h4>Chapter 24 Reading Guide</h4>
+              <p>Due May 19</p>
+            </div>
+            <div class="assignment-score"><span>10</span> / 10</div>
+          </div>
+        </div>
+      </details>
+
+    </section>
+
+    <!-- SECTION 2: THE GRADE DIAGRAM BAR CHART -->
+    <section class="diagram-section">
+      <h3>Class Performance Comparison</h3>
+      
+      <div class="chart-container">
+        <!-- English Bar (95%) -->
+        <div class="chart-row">
+          <div class="chart-label">AP English 12</div>
+          <div class="chart-bar-bg">
+            <div class="chart-bar-fill bg-english" style="width: 95%;"></div>
+          </div>
+          <div class="chart-value" style="color: #60a5fa;">95%</div>
+        </div>
+
+        <!-- Math Bar (88%) -->
+        <div class="chart-row">
+          <div class="chart-label">Calculus BC</div>
+          <div class="chart-bar-bg">
+            <div class="chart-bar-fill bg-math" style="width: 88%;"></div>
+          </div>
+          <div class="chart-value" style="color: #c084fc;">88%</div>
+        </div>
+
+        <!-- History Bar (92%) -->
+        <div class="chart-row">
+          <div class="chart-label">US History</div>
+          <div class="chart-bar-bg">
+            <div class="chart-bar-fill bg-history" style="width: 92%;"></div>
+          </div>
+          <div class="chart-value" style="color: #34d399;">92%</div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+</body>
+</html>
