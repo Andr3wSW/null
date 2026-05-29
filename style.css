@@ -450,3 +450,93 @@ header p {
 .event-math { background-color: rgba(147, 51, 234, 0.2); color: #c084fc; border-left: 3px solid #9333ea; }
 .event-history { background-color: rgba(5, 150, 105, 0.2); color: #34d399; border-left: 3px solid #059669; }
 
+/* ==========================================================================
+   8. COURSES PAGE SPECIFIC STYLES (Rows & List Layout)
+   ========================================================================== */
+
+/* Main layout for course panels container */
+.courses-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Wide rectangle course panels */
+.course-strip {
+  background-color: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 16px;
+  display: flex;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.course-strip:hover {
+  transform: translateX(4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+/* Colorful left accent blocks for the panels */
+.course-accent {
+  width: 16px;
+}
+.course-strip.english .course-accent { background: linear-gradient(180deg, #2563eb, #4f46e5); }
+.course-strip.math .course-accent { background: linear-gradient(180deg, #9333ea, #db2777); }
+.course-strip.history .course-accent { background: linear-gradient(180deg, #059669, #0d9488); }
+
+/* Main informational content layout inside the strip */
+.course-strip-body {
+  flex: 1;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.course-main-info h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.course-meta-tags {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.course-meta-tags span {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+/* Quick access quick-link buttons on the right side */
+.course-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.action-btn {
+  background-color: #374151;
+  color: #f3f4f6;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.action-btn:hover {
+  background-color: #4b5563;
+  color: #ffffff;
+}
+
+/* Specific class color outlines on hover actions */
+.course-strip.english .action-btn:hover { border-color: #3b82f6; }
+.course-strip.math .action-btn:hover { border-color: #a855f7; }
+.course-strip.history .action-btn:hover { border-color: #10b981; }
+
+
