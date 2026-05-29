@@ -168,7 +168,7 @@ header p {
 .history .grade { color: #34d399; }
 
 /* ==========================================================================
-   6. GRADES PAGE SPECIFIC STYLES (Dropdowns & Chart)
+   6. GRADES PAGE SPECIFIC STYLES (Dropdowns & Vertical Chart)
    ========================================================================== */
 
 /* Dropdown Accordion styling */
@@ -191,7 +191,6 @@ header p {
   user-select: none;
 }
 
-/* Hide default browser arrow symbol */
 .course-dropdown summary::-webkit-details-marker {
   display: none;
 }
@@ -241,12 +240,12 @@ header p {
   color: #f3f4f6;
 }
 
-/* Bottom Diagram Section */
+/* Vertical Diagram Section */
 .diagram-section {
   background-color: #1f2937;
   border: 1px solid #374151;
   border-radius: 16px;
-  padding: 24px;
+  padding: 32px;
   margin-top: 40px;
 }
 
@@ -256,49 +255,74 @@ header p {
   margin-bottom: 24px;
 }
 
-.chart-container {
+/* The Layout Container: Y-Axis labels on left, main chart on right */
+.chart-layout {
+  display: flex;
+  gap: 16px;
+  height: 300px; /* Overall height of the graph grid */
+}
+
+/* Y-Axis scale label alignment */
+.y-axis-labels {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-}
-
-.chart-row {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.chart-label {
-  width: 120px;
-  font-size: 14px;
-  font-weight: 500;
+  justify-content: space-between;
+  text-align: right;
+  width: 40px;
+  font-size: 12px;
   color: #9ca3af;
+  padding-bottom: 30px; /* Keeps numbers aligned with graph area */
 }
 
-.chart-bar-bg {
+/* The actual graph grid background area */
+.chart-grid-area {
   flex: 1;
-  background-color: #374151;
-  height: 24px;
-  border-radius: 12px;
-  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  border-left: 2px solid #4b5563;
+  border-bottom: 2px solid #4b5563;
+  padding: 0 20px;
+  background-image: linear-gradient(#374151 1px, transparent 1px);
+  background-size: 100% 25%; /* Generates guide grid lines at 25%, 50%, 75% */
+}
+
+/* Individual columns containing the bar and the label underneath */
+.chart-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  width: 80px;
   position: relative;
 }
 
-.chart-bar-fill {
-  height: 100%;
-  border-radius: 12px;
-  transition: width 1s ease-out;
+/* The vertical color bar */
+.chart-vertical-bar {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  padding-top: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  transition: height 0.5s ease-in-out;
 }
 
-/* Color codes for diagram bars */
-.bg-english { background: linear-gradient(90deg, #2563eb, #60a5fa); }
-.bg-math { background: linear-gradient(90deg, #9333ea, #c084fc); }
-.bg-history { background: linear-gradient(90deg, #059669, #34d399); }
-
-.chart-value {
-  width: 60px;
-  text-align: right;
-  font-size: 14px;
-  font-weight: 600;
+/* Subject name text anchored underneath the bottom baseline axis line */
+.chart-x-label {
+  position: absolute;
+  bottom: -28px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #9ca3af;
+  white-space: nowrap;
 }
 
+/* Gradient themes for vertical bars */
+.bg-v-english { background: linear-gradient(180deg, #3b82f6, #1d4ed8); }
+.bg-v-math { background: linear-gradient(180deg, #a855f7, #6b21a8); }
+.bg-v-history { background: linear-gradient(180deg, #10b981, #047857); }
