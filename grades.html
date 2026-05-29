@@ -127,39 +127,45 @@
 
     </section>
 
-    <!-- SECTION 2: THE GRADE DIAGRAM BAR CHART -->
-    <section class="diagram-section">
+        <!-- SECTION 2: THE VERTICAL GRADE DIAGRAM CHART -->
+    <section class="diagram-section" style="margin-bottom: 50px;">
       <h3>Class Performance Comparison</h3>
       
-      <div class="chart-container">
-        <!-- English Bar (95%) -->
-        <div class="chart-row">
-          <div class="chart-label">AP English 12</div>
-          <div class="chart-bar-bg">
-            <div class="chart-bar-fill bg-english" style="width: 95%;"></div>
-          </div>
-          <div class="chart-value" style="color: #60a5fa;">95%</div>
+      <div class="chart-layout">
+        
+        <!-- Y-AXIS PERCENTAGE SCALE LABELS -->
+        <div class="y-axis-labels">
+          <span>100%</span>
+          <span>75%</span>
+          <span>50%</span>
+          <span>25%</span>
+          <span>0%</span>
         </div>
 
-        <!-- Math Bar (88%) -->
-        <div class="chart-row">
-          <div class="chart-label">Calculus BC</div>
-          <div class="chart-bar-bg">
-            <div class="chart-bar-fill bg-math" style="width: 88%;"></div>
+        <!-- MAIN GRAPH GRID AREA -->
+        <div class="chart-grid-area">
+          
+          <!-- Column 1: English (95% Height) -->
+          <div class="chart-column">
+            <div class="chart-vertical-bar bg-v-english" style="height: 95%;">95%</div>
+            <div class="chart-x-label">AP English</div>
           </div>
-          <div class="chart-value" style="color: #c084fc;">88%</div>
+
+          <!-- Column 2: Math (88% Height) -->
+          <div class="chart-column">
+            <div class="chart-vertical-bar bg-v-math" style="height: 88%;">88%</div>
+            <div class="chart-x-label">Calculus BC</div>
+          </div>
+
+          <!-- Column 3: History (92% Height) -->
+          <div class="chart-column">
+            <div class="chart-vertical-bar bg-v-history" style="height: 92%;">92%</div>
+            <div class="chart-x-label">US History</div>
+          </div>
+
         </div>
 
-        <!-- History Bar (92%) -->
-        <div class="chart-row">
-          <div class="chart-label">US History</div>
-          <div class="chart-bar-bg">
-            <div class="chart-bar-fill bg-history" style="width: 92%;"></div>
-          </div>
-          <div class="chart-value" style="color: #34d399;">92%</div>
-        </div>
       </div>
-
     </section>
   </main>
 
