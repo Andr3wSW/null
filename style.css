@@ -166,3 +166,139 @@ header p {
 .english .grade { color: #60a5fa; }
 .math .grade { color: #c084fc; }
 .history .grade { color: #34d399; }
+
+/* ==========================================================================
+   6. GRADES PAGE SPECIFIC STYLES (Dropdowns & Chart)
+   ========================================================================== */
+
+/* Dropdown Accordion styling */
+.course-dropdown {
+  background-color: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.course-dropdown summary {
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+/* Hide default browser arrow symbol */
+.course-dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.dropdown-header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Assignment Rows inside the dropdown */
+.assignment-list {
+  background-color: #1a202c;
+  border-top: 1px solid #374151;
+  padding: 8px 0;
+}
+
+.assignment-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  border-bottom: 1px solid #2d3748;
+  font-size: 14px;
+}
+
+.assignment-row:last-child {
+  border-bottom: none;
+}
+
+.assignment-info h4 {
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.assignment-info p {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.assignment-score {
+  font-weight: 600;
+  color: #9ca3af;
+}
+
+.assignment-score span {
+  color: #f3f4f6;
+}
+
+/* Bottom Diagram Section */
+.diagram-section {
+  background-color: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 16px;
+  padding: 24px;
+  margin-top: 40px;
+}
+
+.diagram-section h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.chart-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.chart-label {
+  width: 120px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #9ca3af;
+}
+
+.chart-bar-bg {
+  flex: 1;
+  background-color: #374151;
+  height: 24px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.chart-bar-fill {
+  height: 100%;
+  border-radius: 12px;
+  transition: width 1s ease-out;
+}
+
+/* Color codes for diagram bars */
+.bg-english { background: linear-gradient(90deg, #2563eb, #60a5fa); }
+.bg-math { background: linear-gradient(90deg, #9333ea, #c084fc); }
+.bg-history { background: linear-gradient(90deg, #059669, #34d399); }
+
+.chart-value {
+  width: 60px;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 600;
+}
+
