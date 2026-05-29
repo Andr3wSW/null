@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schoology Null</title>
+  <!-- Tailwind CSS for modern styling -->
+  <script src="https://tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 flex min-h-screen font-sans">
+
+  <!-- 1. LEFT SIDEBAR NAVIGATION -->
+  <aside class="w-64 bg-gray-800 p-6 flex flex-col gap-6 border-r border-gray-700">
+    <h1 class="text-2xl font-bold tracking-wider text-blue-400">NULL</h1>
+    <nav class="flex flex-col gap-4 text-gray-400">
+      <a href="#" class="text-white font-medium bg-gray-700 px-4 py-2 rounded-lg">Dashboard</a>
+      <a href="#" class="hover:text-white px-4 py-2 transition">Courses</a>
+      <a href="#" class="hover:text-white px-4 py-2 transition">Grades</a>
+      <a href="#" class="hover:text-white px-4 py-2 transition">Calendar</a>
+    </nav>
+  </aside>
+
+  <!-- 2. MAIN CONTENT AREA -->
+  <main class="flex-1 p-8">
+    <header class="mb-8">
+      <h2 class="text-3xl font-bold">Welcome back, Student</h2>
+      <p class="text-gray-400">Here is an overview of your current classes.</p>
+    </header>
+
+    <!-- 3. CLASS CARDS GRID -->
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <!-- Period 1 Card -->
+      <div class="bg-gray-800 rounded-2xl p-6 border border-gray-700 hover:border-blue-500 transition-all shadow-lg group">
+        <div class="h-32 bg-gradient-to-tr from-blue-600 to-indigo-600 rounded-xl mb-4 flex items-end p-4">
+          <h3 class="text-xl font-bold text-white group-hover:scale-105 transition-transform">AP English 12</h3>
+        </div>
+        <p class="text-sm text-gray-400 mb-2">Period 1 • Room 204</p>
+        <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-700">
+          <span class="text-xs bg-green-500/10 text-green-400 px-2 py-1 rounded">No Homework</span>
+          <span class="text-lg font-bold text-blue-400">A (95%)</span>
+        </div>
+      </div>
+
+      <!-- Period 2 Card -->
+      <div class="bg-gray-800 rounded-2xl p-6 border border-gray-700 hover:border-purple-500 transition-all shadow-lg group">
+        <div class="h-32 bg-gradient-to-tr from-purple-600 to-pink-600 rounded-xl mb-4 flex items-end p-4">
+          <h3 class="text-xl font-bold text-white group-hover:scale-105 transition-transform">Calculus BC</h3>
+        </div>
+        <p class="text-sm text-gray-400 mb-2">Period 2 • Room 112</p>
+        <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-700">
+          <span class="text-xs bg-amber-500/10 text-amber-400 px-2 py-1 rounded">1 Missing Item</span>
+          <span class="text-lg font-bold text-purple-400">B+ (88%)</span>
+        </div>
+      </div>
+
+      <!-- Period 3 Card -->
+      <div class="bg-gray-800 rounded-2xl p-6 border border-gray-700 hover:border-emerald-500 transition-all shadow-lg group">
+        <div class="h-32 bg-gradient-to-tr from-emerald-600 to-teal-600 rounded-xl mb-4 flex items-end p-4">
+          <h3 class="text-xl font-bold text-white group-hover:scale-105 transition-transform">US History</h3>
+        </div>
+        <p class="text-sm text-gray-400 mb-2">Period 3 • Room 301</p>
+        <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-700">
+          <span class="text-xs bg-blue-500/10 text-blue-400 px-2 py-1 rounded">Due Tomorrow</span>
+          <span class="text-lg font-bold text-emerald-400">A- (92%)</span>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+</body>
+</html>
